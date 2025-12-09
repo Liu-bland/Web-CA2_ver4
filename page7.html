@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Successfully</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 80px; /* 避开导航栏 */
+            padding-bottom: 50px;
+            background: linear-gradient(135deg, #00c8ff 0%, #0800ff 100%);
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            min-height: 100vh;
+            text-align: center; /* 让所有文字默认居中 */
+        }
+        
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex; justify-content: center; gap: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .nav-button {
+            width: 120px; padding: 10px 0; border-radius: 5px;
+            background: white; color: #5a67d8; border: 1px solid #5a67d8;
+            text-decoration: none; font-weight: bold;
+            transition: 0.2s;
+        }
+        .nav-button:hover { background: #5a67d8; color: white; }
+
+        /* 内容容器 */
+        .container {
+            width: 1000px; /* 固定PC端宽度 */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px; /* 模块之间的间距 */
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 100px; /* 大屏字体 */
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+            margin: 0;
+            font-weight: 800;
+        }
+        h2 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+
+        .audio-box {
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: fit-content;
+        }
+
+        /* 视频容器 */
+        .video-box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+        video {
+            width: 800px; /* 固定视频宽度 */
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        a { color: #00f7ff; text-decoration: none; font-size: 18px; }
+        a:hover { color: #ffff00; text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html" class="nav-button">Home</a>
+        <a href="./p2_ai_healthcare.html" class="nav-button">Healthcare</a>
+        <a href="./p3_ai_autonomous.html" class="nav-button">Autonomous</a>
+        <a href="./p4_ai_entertainment.html" class="nav-button">Entertainment</a>
+        <a href="./p5_future_of_ai.html" class="nav-button">Future</a>
+        <a href="./form.html" class="nav-button">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="audio-box">
+            <audio src="./Cries-in-a-distance.mp3" controls></audio>
+            <p style="margin: 10px 0 0;">[Cries in a distance] by JJ LIN</p>
+        </div>
+
+        <div>
+            <h1>Submission Successful</h1>
+            <br>
+            <h2>You need to relax!</h2>
+        </div>
+
+        <div class="video-box">
+            <video src="./一千年以后-JJLIN.mp4" autoplay muted controls loop></video>
+            <video src="./1350918513-1-192.mp4" autoplay muted controls loop></video>
+        </div>
+
+        <div>
+            <p>Source:</p>
+            <a href="https://www.bilibili.com/video/BV19dsrzpExw" target="_blank">Bilibili: Honor of Kings (Video 1)</a><br><br>
+            <a href="https://www.bilibili.com/video/BV1y64y1L79d" target="_blank">Bilibili: Powaildi (Video 2)</a>
+        </div>
+    </div>
+</body>
+</html>
